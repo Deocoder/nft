@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #0d192b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #111;
+  /* border: 10px solid hsl(215, 51%, 70%); */
+}
+
+.container-img {
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.container-img img {
+  border-radius: 10px;
+  height: 100%;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  transition: hover 1.5s;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-img:hover .overlay {
+  height: 100%;
+  z-index: 9;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 255, 247);
+}
+
+h3 {
+  color: #f5f5f5;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+h3:hover{
+    color: rgb(0, 255, 247);
+}
+
+p {
+  line-height: 22px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+hr {
+  color: #111;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.icon a {
+  padding: 2px;
+  color: rgb(0, 255, 247);
+}
+
+.icon a:nth-child(2) {
+  color: #fff;
+  margin-left: 52px;
+}
+
+.row{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.row img{
+    height: 30px;
+    border:1px solid #fff;
+    width: 30px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+span{
+    color: #fff;
+}
+
+span:hover{
+    color: rgb(0, 255, 247);
+}
